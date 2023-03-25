@@ -35,7 +35,7 @@ export default function HomePage() {
             <Header/>
             <Container sx={{padding: "0 0 3rem"}}>
                 {posts.map((post, index) => {
-                    return <Post key={uuidv4()} post={post} timeout={(index * 400) % 400}/>;
+                    return <Post key={uuidv4()} post={post} timeout={(index * 400) % 16000}/>;
                 })}
             </Container>
         </div>

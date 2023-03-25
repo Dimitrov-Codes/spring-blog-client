@@ -14,7 +14,7 @@ const LoginForm = () => {
         event.preventDefault()
         const username = usernameRef.current.value
         const password = passwordRef.current.value;
-         console.log(username + " " + password);
+
         const data = {
             "usernameOrEmail": username,
             "password": password
